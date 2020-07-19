@@ -1,14 +1,17 @@
 import Vue from "vue";
-import Vuetify from 'vuetify';
-import 'vuetify/dist/vuetify.min.css';
+//import Vuetify from 'vuetify';
+//import 'vuetify/dist/vuetify.min.css';
 import App from "./App.vue";
 import router from "./router";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-Vue.use(Vuetify);
+//Vue.use(Vuetify);
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
+  //vuetify: new Vuetify(),
   render: h => h(App)
 }).$mount("#app");
